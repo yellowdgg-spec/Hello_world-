@@ -1,11 +1,75 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello World</title>
-  </head>
-  <body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .social-bar {
+            display: flex;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: white;
+            color: #333;
+            text-decoration: none;
+            font-size: 28px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .social-link:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .youtube {
+            background: #FF0000;
+            color: white;
+        }
+
+        .instagram {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            color: white;
+        }
+    </style>
+</head>
+<body>
     <h1>Hello World!</h1>
-    <p>This website is hosted with GitHub Pages.</p>
-    ELLO MATE 
-  </body>
+    <p>Welcome to my website</p>
+    
+    <div class="social-bar">
+        <a href="https://www.youtube.com/@QuickSniff" target="_blank" class="social-link youtube" title="YouTube">
+            <span>▶</span>
+        </a>
+        <a href="https://instagram.com/yourusername" target="_blank" class="social-link instagram" title="Instagram">
+            <span>📷</span>
+        </a>
+    </div>
+</body>
 </html>
